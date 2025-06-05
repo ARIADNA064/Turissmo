@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-size: cover;
+            animation: cambiar-fondo 20s infinite;
+         }
+        @keyframes cambiar-fondo {
+             0% { background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/15/30/b9/6e.jpg) ; }
+             25% { background-image: url(https://nirik.travel/blog/wp-content/uploads/2021/01/tour-chiapas-3-dias-san-cristobal-de-las-casas.jpg); }
+             50% { background-image: url(https://i0.wp.com/foodandpleasure.com/wp-content/uploads/2024/07/que-hacer-en-el-puerto-de-veracruz1.jpg?fit=1500%2C1000&ssl=1) ;} 
+             75% { background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/eb/Catedral_metropolitana_de_Guadalajara_01.jpg) ; }
+             100% {background-image:url(https://traveler.marriott.com/es/wp-content/uploads/sites/2/2021/11/Mexico-City-GI-1064279806.jpg) ; }
+        }
+        .men{
+     list-style: none;
+     padding: 0;
+     background: #092327;
+     width: 90%;
+     max-width: 1000px;
+     margin: auto;
+    }
+    .men li a{
+     text-decoration: none;
+     color: white;
+     padding: 20px;
+     display: block;
+    }
+    .men li{
+     display: inline-block;
+     text-align: center;
+    }
+    .men li a:hover{
+     background: #ef8354;
+    }
+    .logo{
+     width: 50px;
+     align-items: center;
+    }
+    div{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+    }
+    .invitacion {
+            width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: #fff;
+            
+            flex-direction: column;
+        }
+        .invitacion h1 {
+            text-align: center;
+            color: #333;
+        }
+        .invitacion p {
+            text-align: justify;
+            color: #666;
+        }
+        .invitacion .detalles {
+            margin-top: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid #ccc;
+        }
+        .invitacion .detalles p {
+            margin-bottom: 10px;
+        }
+        .invi{
+         transition: .3s ease;
+         margin-top: 20px;
+         flex-direction: column;
+        }
+        .invi:hover{
+         transform: scale(1.5);
+        }
+        .footer{
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        background-color: #286bcf;
+        min-height: 130px;
+        margin: 0 auto;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .socialicons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 10px 5px;
+      flex-wrap: wrap;
+    }
+    .icon-elem{
+      list-style: none;
+    }
+    .icon{
+      color: white;
+      font-size: 20px;
+      display: inline-block;
+      margin: 0 10px;
+      transition: 0.5s;
+    }
+    .icon:hover{
+      transform: translateY(-10px);
+    }
+    .paginas{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 10px 0px;
+      flex-wrap: wrap;
+    }
+    .paginas-elem{
+      list-style: none;
+    }
+    .menu-icon{
+      color: white;
+      font-size: 20px;
+      display: inline-block;
+      text-decoration: none;
+      margin: 0px 5px;
+      opacity: 0.5;
+      transition: 0.3s;
+    }
+    .menu-icon:hover{
+      opacity: 1;
+    }
+    </style>
+</head>
+<body>
+    <ul class="men">
+    <div>
+    <img src="logo.jpeg" alt="logo" class="logo">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="estados.html">Estados</a></li>
+    <li><a href="">Registro</a></li>
+  </ul>
+  </div>
+
+    <div class="invitacion">
+        <h1>Feria Gastronomica</h1>
+        <p>Nos complace invitarte a la Feria Gastronomica, que se llevará a cabo el 11 
+           de junio del 2025 a las 13 hrs en el Plantel CONALEP Nezahualcoyotl.</p>
+        <p>Este evento es una oportunidad para (Breve descripción del evento).</p>
+        <div class="detalles">
+            <p><strong>Fecha:</strong>11 de junio de 2025 </p>
+            <p><strong>Hora:</strong> De 1:00 p.m a 3:00 p.m</p>
+            <p><strong>Lugar:</strong> Plantel CONALEP Nezahualcoyotl III</p>
+        </div>
+        <img src="invitacion.jpeg" class="invi"
+        width="500px"
+        height="400">
+        <p>Esperamos verte!</p>
+    
+    </div>
+    <footer class="footer">
+      <ul class="socialicons">
+        <li class="icon-elem">
+          <a href="https://www.tiktok.com/@conalep.neza3?_t=ZS-8wraACRR8wD&_r=1" class="icon">
+            <ion-icon name="logo-tiktok"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.facebook.com/share/1DoXFfi8QN/" class="icon">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="icon-elem">
+          <a href="https://www.instagram.com/conalep_neza3?igsh=MXB6bmw5NnQycndjcQ==" class="icon">
+           <ion-icon name="logo-instagram"></ion-icon> 
+          </a>
+        </li>
+      </ul>
+      <ul class="paginas">
+        <li class="paginas-elem">
+          <a  href="inicio.html" class="menu-icon">Inicio</a>
+        </li>
+        <li class="paginas-elem">
+          <a  href="estados.html" class="menu-icon">Estados</a>
+        </li>
+        <li class="paginas-elem">
+          <a  href="" class="menu-icon">Registro</a>
+        </li>
+      </ul>
+    </footer>
+    <script  type = "module"  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js " > </script> 
+<script  nomodule  src = " https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js " > </script>
+</body>
+</html>

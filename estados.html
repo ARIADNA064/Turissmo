@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content=">IE-edge">
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Responsive Box</title>
+  <style>
+    body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16384c; 
+}
+.container{
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container .card{
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover{
+height: 525px;
+}
+.container .card .imgBx{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+}
+.container .card .imgBx img{
+  max-width: 100%;
+  border-radius: 2px;
+}
+.container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="cdmx.jpeg" alt="cdmx">
+      </div>
+      <div class="content">
+        <h2>Ciudad de México</h2>
+        <p>La Ciudad de México es un cristol de sabores y tradiciones. Su gastronomía es una explosión 
+            de colores y sabores. Y no solo la comida es una delicia, también las artesanías que se pueden
+            encontrar en mercados donde se puede admirar hermosas piezas de arte popular.</p>
+            <p><a href="cdmx.html">Ver detalles</a></p>      <
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="oaxaca.jpeg" alt="oaxaca">
+      </div>
+      <div class="content">
+        <h2>Oaxaca</h2>
+        <p>Es un estado ubicado al sur de México, conocido por su rica diversidad
+            cultural y natural. Es un destino popular para aquellos interesados en explotar la herencia indígena
+            y la belleza natural de México.
+        </p>
+        <p><a href="OAXACA3.HTML">Ver detalles</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="chiapas.jpeg" alt="chiapas">
+      </div>
+      <div class="content">
+        <h2>Chiapas</h2>
+        <p>Es un estado ubicado en el sureste de México, conocido por su rica biodiversidad 
+             y patrimonio cultural. La economía se basa en la agricultura, el turismo y la 
+            producción de energía hidroeléctrica. También es conocido por sus sitios arqueológicos
+            mayas.</p>
+         <p><a href="chiapas.html">Ver detalles</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="veracruz.jpeg" alt="veracruz">
+      </div>
+      <div class="content">
+        <h2>Veracruz</h2>
+        <p>Es un estado ubicado en la costa del Golfo de México, conocido por su rica historia, cultura 
+        y biodiversidad. es un importante centro económico y cultural del país. La entidad cuenta con una gran variedad 
+        de ecosistemas, desde selvas tropicales hasta montañas y costas, siendo hogar de varias especies endémicas.
+        </p>
+        <p><a href="veracruz.html">Ver detalles</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="guadalajara.jpeg" alt="guadalajara">
+      </div>
+      <div class="content">
+        <h2>Guadalajara</h2>
+        <p>Capital del estado del Jalisco, que se encuentra
+          en el oeste del país. Conocido por su rica cultura, historia 
+          y tradiciones, y es famoso por ser el lugar de origen del mariachi,
+          la charrería y el tequila.</p>
+          <p><a href="guadalajara.html">Ver detalles</a></p>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
